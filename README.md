@@ -118,8 +118,8 @@ reactstrap
 
 # Authors
 
-Me, Jeff Adler!
-[Cathy D'Onofrio](https://github.com/catd825 "Cathy D'Onofrio")
+Myself and 
+[Jeff Adler](https://github.com/jeff-adler "Jeff Adler")
 
 # Acknowledgements
 
