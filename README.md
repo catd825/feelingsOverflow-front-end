@@ -1,68 +1,126 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# feelingsOverflow.
 
-## Available Scripts
+### stackOverflow, but for your feelings.
 
-In the project directory, you can run:
+What is among one of the most important tools in the life of any software engineer? StackOverflow, of course! What if we had that same level of community discourse and commitment to problem solving not just for fixing bugs in your code, but for helping sort through the myriad emotional difficulties that confront us daily! That's what feelingsOverflow is all about: a forum-based app in the style of stackOverflow, but catered towards helping people sort through difficult emotional issues.
 
-### `yarn start`
+Check out the live page here: [feelingsOverflow](https://feelings-overflow-app.herokuapp.com/ "feelingsOverflow")
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `yarn test`
+Ensure you React, Ruby, and Rails installed.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `yarn build`
+1. Fork and clone [backend repo](https://github.com/Jeff-Adler/feelingsOverflow-back-end "Backend Repo")
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. From your terminal, enter:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+cd feelingsOverflow_backend
+bundle install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Fork and clone this (frontend) repo
 
-### `yarn eject`
+4. From terminal (preferably in another tab), enter:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cd feelingsOverflow_frontend
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. From backend terminal tab, enter:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+rails db:create
+rails db:migrate
+rails db:seed //seeds database
+rails s //runs Rails server
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+6. From frontend terminal tab, enter:
 
-## Learn More
+```
+npm start //runs React server
+//If there is a message that port 3000 is occupied:
+Y //press Enter
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Click 'New here? Sign up!'
 
-### Code Splitting
+![login](./screenshots/login.png?raw=true "login")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+2. Fill out your personal information. Note: Username and Password must be between 6 and 20 characters.
 
-### Analyzing the Bundle Size
+![signup](./screenshots/signup.png?raw=true "signup")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+3. Navigate with the navbar (if that wasn't obvious :P)
 
-### Making a Progressive Web App
+![navbar](./screenshots/navbar.png?raw=true "navbar")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+4. From the Home page, view the most recent posts from all users.
 
-### Advanced Configuration
+![posts](./screenshots/posts.png?raw=true "posts")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+5. Search posts by title or description, and toggle sort by category.
 
-### Deployment
+![search](./screenshots/search.png?raw=true "search")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+6. Click 'What's on your mind' to fill out a form and create a new post!
 
-### `yarn build` fails to minify
+![post_submit](./screenshots/post_submit.png?raw=true "post_submit")
+![post_form](./screenshots/post_form.png?raw=true "post_form")
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+7. Click a post to navigate to its show page. View comments, vote on comments, and submit a comment!
+
+![post_page](./screenshots/post_page.png?raw=true "post_page")
+![comment_page](./screenshots/comment_page.png?raw=true "comment_page")
+![comment_form](./screenshots/comment_form.png?raw=true "comment_form")
+
+8. Click on the 'My Posts' tab in the navbar to see all the posts you've created.
+
+![my_posts](./screenshots/my_posts.png?raw=true "my_posts")
+
+9. Click on any of your own posts to edit or delete the post.
+
+![my_posts](./screenshots/my_posts.png?raw=true "my_posts")
+![my_post_page](./screenshots/my_post_page.png?raw=true "my_post_page")
+
+10. From the 'Account' tab, view information about your profile, your stats, as well as logout.
+
+![account_info](./screenshots/account_info.png?raw=true "account_info")
+![stats](./screenshots/stats.png?raw=true "stats")
+
+# Built With
+
+- React
+- Javascript
+- Ruby on Rails
+- PostgreSQL
+- ActiveRecord
+- Bootstrap
+- React-Strap
+
+## React/Javascript Libraries
+
+bootstrap
+react-bootstrap
+reactstrap
+
+## Ruby Gems
+
+(standard Rails gems)
+
+# Authors
+
+Me, Jeff Adler!
+[Cathy D'Onofrio](https://github.com/catd825 "Cathy D'Onofrio")
+
+# Acknowledgements
+
+As always, this project would have been made nigh impossible without the amazing community of people who built the packages, gems, and libraries listed above!
