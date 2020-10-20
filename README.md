@@ -4,13 +4,13 @@
 
 What is among one of the most important tools in the life of any software engineer? StackOverflow, of course! What if we had that same level of community discourse and commitment to problem solving not just for fixing bugs in your code, but for helping sort through the myriad emotional difficulties that confront us daily! That's what feelingsOverflow is all about: a forum-based app in the style of stackOverflow, but catered towards helping people sort through difficult emotional issues.
 
-Check out the live page here: [feelingsOverflow](https://feelings-overflow-app.herokuapp.com/ "feelingsOverflow")
+Check out the [live page here](https://feelings-overflow-app.herokuapp.com/ "feelingsOverflow") and [demo here](https://youtu.be/FfzPzYYGqw0)
 
 ## Getting Started
 
 ### Prerequisites
 
-Ensure you React, Ruby, and Rails installed.
+Ensure you have React, Ruby, and Rails installed.
 
 ### Installation
 
